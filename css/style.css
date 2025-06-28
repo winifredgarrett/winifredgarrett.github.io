@@ -1,6 +1,6 @@
 .body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to bottom, white, whitesmoke, #FFD60A );
+    background: linear-gradient(to bottom, white, whitesmoke);
     display: flex;
     height: 200vh;
 }
@@ -96,6 +96,11 @@ a:hover {
 
 
 /* external css: flickity.css */
+.container{
+    margin-left: 25%;
+    width:50%;
+    margin-right: 25%;
+}
 
 * {
   -webkit-box-sizing: border-box;
@@ -107,11 +112,13 @@ a:hover {
 
 }
 
+
+
+
 .gallery-cell {
-  width: 100%;
+  width: 50%;
   height: 200px;
   margin-right: 10px;
-  background: #8C8;
   counter-increment: gallery-cell;
 }
 
@@ -125,5 +132,27 @@ a:hover {
   color: white;
 }
 
+.flickity-button {
+  background: transparent;
+}
+.flickity-button:hover {
+  background: #F90;
+}
+
+.flickity-prev-next-button {
+  width: 100px;
+  height: 100px;
+}
+/* icon color */
+.flickity-button-icon {
+  fill: white;
+}
+/* position outside */
+.flickity-prev-next-button.previous {
+  left: -40px;
+}
+.flickity-prev-next-button.next {
+  right: -40px;
+}
 
 
